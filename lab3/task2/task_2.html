@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #todo-container {
+            max-width: 400px;
+            margin: auto;
+            text-align: left;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+        .done {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h2>Simple To-Do List</h2>
+    <div id="todo-container">
+        <input type="text" id="taskInput" placeholder="Add new task">
+        <button onclick="addTask()">Add</button>
+        <ul id="taskList"></ul>
+    </div>
+    
+    <script>
+        function addTask() {
+            let taskText = document.getElementById("taskInput").value;
+            if (taskText.trim() === "") return;
+            
+            let li = document.createElement("li");
+            let checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            checkbox.onchange = function() {
+                li.classList.toggle("done", this.checked);
+            };
+            
+            let span = document.createElement("span");
+            span.textContent = taskText;
+            
+            let deleteBtn = document.createElement("button");
+            deleteBtn.textContent = "❌";
+            deleteBtn.onclick = function() {
+                li.remove();
+            };
+            
+            li.appendChild(checkbox);
+            li.appendChild(span);
+            li.appendChild(deleteBtn);
+            document.getElementById("taskList").appendChild(li);
+            
+            document.getElementById("taskInput").value = "";
+        }
+    </script>
+</body>
+</html>
