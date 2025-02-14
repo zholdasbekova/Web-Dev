@@ -12,28 +12,25 @@
         }
         #todo-container {
             max-width: 400px;
-            margin: auto;
+            margin: 20px auto;
             text-align: left;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
+            justify-content: center;
         }
         li {
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 8px;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid grey;
         }
         .done {
             text-decoration: line-through;
-            color: gray;
+            color: grey;
         }
     </style>
 </head>
 <body>
-    <h2>Simple To-Do List</h2>
+    <h2> To-Do List</h2>
     <div id="todo-container">
         <input type="text" id="taskInput" placeholder="Add new task">
         <button onclick="addTask()">Add</button>
@@ -46,6 +43,7 @@
             if (taskText.trim() === "") return;
             
             let li = document.createElement("li");
+
             let checkbox = document.createElement("input");
             checkbox.type = "checkbox";
             checkbox.onchange = function() {
@@ -65,7 +63,6 @@
             li.appendChild(span);
             li.appendChild(deleteBtn);
             document.getElementById("taskList").appendChild(li);
-            
             document.getElementById("taskInput").value = "";
         }
     </script>
