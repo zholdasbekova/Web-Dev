@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+  }
+  .wrapper{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    padding-left: 210px;
+    width: 1200px;
+    height:1200px;
+  }
+  

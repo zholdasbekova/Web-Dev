@@ -1,0 +1,29 @@
+<app-top-bar></app-top-bar>
+
+<div class="main">
+  <div class="ctg">
+    <div class="nav">
+      <ul class="nav_list">
+        <li *ngFor="let category of categories" id="lst"><button id="ctbt" (click)="categoryClick(category.name)">{{ category.name }}</button></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<app-product-list *ngIf="show" [categoryName]="categoryName"></app-product-list>
+
+<div *ngIf="!show">
+  <div style="margin-bottom: 35px;">
+    <a href="https://kaspi.kz/"><img id="slider" src="../assets/images/desktop-main-slider.png"></a>
+  </div>
+
+  <div style="margin-left: 100px;">
+    <ul class="liC">
+      <li id="lt" *ngFor="let category of categories">
+        <button class="ol" (click)="categoryClick(category.name)">
+          <span><strong>{{ category.name }}</strong></span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>

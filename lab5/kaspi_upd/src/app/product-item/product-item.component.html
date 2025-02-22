@@ -1,0 +1,32 @@
+<div class="container" *ngIf="product">
+    <div>
+      <div id="delete">
+        <button id="btd" (click)="deleteProduct()">X</button>
+      </div>
+      <div class="images">
+        <img src="{{product.image}}">
+  
+      </div>
+    </div>
+    <h3>
+      <a href="{{product.kaspiLink}}" target="_blank" [title]="product.name + ' details'">
+        {{ product.name }}
+      </a>
+    </h3>
+    <div class="rating">
+      <img src="/assets/images/red-star.jpeg">
+      <h4>{{product.rating}}</h4>
+      <div id="lik" (click)="like()">
+        <span id="cnt"><strong>{{ product.likes }}</strong></span>
+      </div>
+    </div>
+    <p *ngIf="product.description">
+      Description: {{product.description}}
+    </p>
+  
+    <div id="share">
+      <button id="shr" (click)="share(product.kaspiLink)">
+        Share
+      </button>
+    </div>
+  </div>

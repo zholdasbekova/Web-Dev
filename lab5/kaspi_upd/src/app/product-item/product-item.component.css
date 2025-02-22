@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  .container{
+    border:1px solid whitesmoke;
+    border-radius: 3px;
+    width: 500px;
+    height: 600px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+  .images{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding:15px;
+  }
+  .images img{
+    width:240px;
+    height:240px;
+    background-color: white;
+    border:0.4px solid whitesmoke;
+    position: relative;
+  }
+  .images button{
+    margin-top: 30px;
+    height: 40px;
+    border-radius: 5px;
+    width:100px;
+    background-color: white;
+    color:blue;
+    font-size: 20px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  .rating{
+    display: flex;
+    flex-direction: row;
+  }
+  .rating img{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    margin-top:10px ;
+  }
+  .rating h4{
+    margin-left: 5px;
+    margin-top:10px;
+  }
+  button{
+    width:15%;
+    border-radius: 10px;
+  }
+  #delete{
+    float: right;
+  }
+  #btd{
+    width: 40px;
+  }
+  #like{
+    margin-top: -1px;
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+  }
+  #shr{
+    background-color:cornflowerblue;
+  }
+  #nxt{
+    border: none;
+  }
+  #cnt{
+    color: black;
+    margin-left: 8px;
+    margin-top: 5px;
+    font-size: 17px;
+  }
+  #lik{
+    display: flex;
+    flex-direction: row;
+  }
+  

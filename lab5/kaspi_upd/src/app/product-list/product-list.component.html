@@ -1,0 +1,7 @@
+<div class="wrapper">
+  <div *ngFor="let product of products; let a = index">
+    <div *ngIf="product.category == categoryName">
+      <app-product-items [product]="product" [a]="a" (remove)="remove($event)"></app-product-items>
+    </div>
+  </div>
+</div>
