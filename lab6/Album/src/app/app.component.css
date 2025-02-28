@@ -1,0 +1,29 @@
+/* Resetting default margin and padding for UL and LI */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  li {
+    display: inline;
+  }
+  
+  /* Styling links */
+  a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #333; /* Change this to your preferred text color */
+  }
+  
+  a:hover {
+    background-color: #f0f0f0; /* Change this to your preferred hover background color */
+  }
+  
+  /* Styling the top bar */
+  .top-bar {
+    background-color: #fff; /* Change this to your preferred background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+    display: flex;
+    justify-content: flex-end; /* Aligning items to the end of the container */
+  }

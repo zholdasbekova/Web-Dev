@@ -1,0 +1,26 @@
+/* Container styling */
+.photo-container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+  }
+  
+  /* Photo details styling */
+  .photo-details {
+    width: calc(33.33% - 20px); /* Adjust width to fit three items per row with margins */
+    margin: 10px; /* Add margin to separate items */
+    padding: 10px; /* Add padding to the container */
+    border: 1px solid #ccc; /* Add border for each photo details */
+    border-radius: 5px; /* Round the corners */
+  }
+  
+  /* Photo number styling */
+  .photo-details p:nth-child(odd) {
+    font-weight: bold; /* Make odd numbered paragraphs bold */
+  }
+  
+  /* Image styling */
+  .photo-details img {
+    max-width: 100%; /* Ensure images don't exceed their container */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px; /* Add margin above images */
+  }

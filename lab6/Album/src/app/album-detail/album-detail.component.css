@@ -1,0 +1,60 @@
+  /* Container styling */
+  div {
+    margin-bottom: 20px; /* Adding some space below the container */
+  }
+
+  /* Heading styling */
+  h2 {
+    font-size: 24px; /* Adjusting font size */
+    margin-bottom: 10px; /* Adding some space below the heading */
+  }
+
+  /* Italics styling */
+  em {
+    font-style: italic; /* Making text italic */
+  }
+
+  /* Label styling */
+  label {
+    display: block; /* Making the label a block element */
+    margin-bottom: 5px; /* Adding some space below the label */
+  }
+
+  /* Input styling */
+  input {
+    width: 100%; /* Making the input full width */
+    padding: 8px; /* Adding padding */
+    margin-bottom: 10px; /* Adding some space below the input */
+    border: 1px solid #ccc; /* Adding border */
+    border-radius: 5px; /* Rounding the corners */
+  }
+
+  /* Button styling */
+  button {
+    padding: 8px 16px; /* Adding padding */
+    margin-right: 10px; /* Adding some space between buttons */
+    border: none; /* Removing border */
+    border-radius: 5px; /* Rounding the corners */
+    cursor: pointer; /* Showing pointer cursor on hover */
+  }
+
+  .save {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+  }
+
+  .photos {
+    background-color: #28a745; /* Green background color */
+    color: #fff; /* White text color */
+  }
+
+  .return {
+    background-color: #6c757d; /* Grey background color */
+    color: #fff; /* White text color */
+  }
+
+  /* Styling for loading message */
+  p {
+    font-style: italic; /* Making text italic */
+    color: #888; /* Grey text color */
+  }
