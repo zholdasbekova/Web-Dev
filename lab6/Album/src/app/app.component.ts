@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import {RouterLink, RouterModule} from '@angular/router';
 import {HomeComponent} from "./home/home.component";
 import {AboutComponent} from "./about/about.component";
-import {NotFoundComponent} from "./not-found/not-found.component";
 import {AlbumsComponent} from "./albums/albums.component";
 
 @Component({

@@ -1,12 +1,9 @@
-
 <div class="photo-container">
   <div *ngFor="let photo of photos" class="photo-details">
     <p>Photo number: {{photo.id}}</p>
-
     <p>Title: {{photo.title}}</p>
-
-    <img src="https://avatars.mds.yandex.net/i?id=1f9e23df8bcd8cac657021dd2c33fdb08bdddcef-5292620-images-thumbs&n=13">
-
+    <img [src]="photo.url" [alt]="photo.title">
   </div>
 </div>
-<button [routerLink]="['/albums/' + album.id]" class="return">Return back</button>
+
+<button [routerLink]="['/albums/' + albumId]" class="return">Return back</button>
