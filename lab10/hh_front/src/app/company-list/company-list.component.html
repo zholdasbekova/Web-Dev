@@ -1,0 +1,15 @@
+<h2>Companies</h2>
+    <ul>
+      <li *ngFor="let company of companies" (click)="selectCompany(company)">
+        {{ company.name }} ({{ company.city }})
+      </li>
+    </ul>
+
+    <div *ngIf="vacancies.length > 0">
+      <h3>Vacancies at {{ selectedCompany?.name }}</h3>
+      <ul>
+        <li *ngFor="let vacancy of vacancies">
+          {{ vacancy.name }}
+        </li>
+      </ul>
+    </div>

@@ -1,0 +1,7 @@
+<h2>Vacancy List</h2>
+<button  (click)="getTopTen()">Show top 10 vacancies</button>
+    <ul>
+      <li *ngFor="let vacancy of vacancies">
+        {{ vacancy.name }} - {{ vacancy.salary }}$
+      </li>
+    </ul>
